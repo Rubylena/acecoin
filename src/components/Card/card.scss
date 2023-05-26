@@ -1,0 +1,206 @@
+.checkout_container {
+  background-color: #f0f3f8;
+  border-radius: 10px;
+  margin-top: 5rem;
+  position: relative;
+  padding: 0 0 1rem;
+  .credit-card {
+    background: linear-gradient(180deg, rgb(255 255 255 / 60%), #fff);
+    backdrop-filter: blur(25px);
+    padding: 1.5rem 1rem;
+    margin: -5rem 2rem 0;
+    border-radius: 1em;
+    box-shadow: 0 5px 28px -14px #0077b6;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    &__body {
+      color: #05365c;
+      span {
+        display: block;
+      }
+      .holder {
+        text-transform: capitalize;
+        font-size: 0.95em;
+        margin-bottom: 0.5em;
+      }
+      .card-numbers {
+        display: flex;
+        margin-bottom: 0.5em;
+        .hidden-numbers {
+          display: flex;
+          align-items: center;
+          margin-right: 0.5em;
+          .circle {
+            height: 0.4em;
+            width: 0.4em;
+            border-radius: 50%;
+            background-color: #17254c;
+            margin-right: 0.4em;
+          }
+        }
+        .visible-numbers {
+          font-size: 1.1em;
+          font-weight: 700;
+        }
+      }
+    }
+    &__footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 0.8rem;
+      .expiry {
+        font-size: 1em;
+        font-weight: 600;
+      }
+    }
+  }
+  .blu {
+    display: block;
+    height: 1em;
+    width: 4em;
+    background-color: #035fff;
+    position: absolute;
+    top: -87px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 3px;
+  }
+  .checkout-details {
+    background-color: #fff;
+    .purchase-data {
+      padding: 2rem 2rem 0;
+      background-color: #f0f3f8;
+      .data {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-transform: capitalize;
+        font-size: 1rem;
+        color: #8e96a3;
+        padding-bottom: 1.2rem;
+        .title {
+          font-size: 0.85rem;
+          font-weight: 500;
+        }
+        .value {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          img {
+            height: 1.5rem;
+          }
+          .inner-text {
+            color: #05365c;
+            font-weight: 600;
+            margin-left: 0.6rem;
+          }
+        }
+        @media (max-width: 596px) {
+          flex-direction: column;
+        }
+      }
+    }
+    .divider {
+      border: 0.1px dashed #cbcbcb;
+    }
+    .purchase-total {
+      padding: 1rem 2rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      background-color: #f0f3f8;
+      position: relative;
+      .total {
+        .desc {
+          color: #8e96a3;
+          font-size: 0.9rem;
+          font-weight: 500;
+        }
+        .t-amount {
+          display: flex;
+          align-items: center;
+          .amount {
+            font-size: 2rem;
+            font-weight: 700;
+            span {
+              font-size: 0.8rem;
+              font-weight: 500;
+            }
+          }
+          .symbol {
+            font-size: 1rem;
+            margin-left: 0.2rem;
+            color: #8e96a3;
+          }
+        }
+      }
+    }
+    .purchase-total::before {
+      content: "";
+      width: 30px;
+      height: 30px;
+      background-color: #fff;
+      border-radius: 50%;
+      position: absolute;
+      top: -16px;
+      left: -10px;
+    }
+    .purchase-total::after {
+      content: "";
+      width: 30px;
+      height: 30px;
+      background-color: #fff;
+      border-radius: 50%;
+      position: absolute;
+      top: -16px;
+      right: -10px;
+    }
+  }
+
+  .card__design {
+    width: 600px;
+    height: 600px;
+    border: 1px solid #ebebeb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 1.5rem;
+    left: -3em;
+    z-index: -1;
+    backdrop-filter: blur(25px);
+    .inner {
+      display: inline-block;
+      width: 500px;
+      height: 500px;
+      border-radius: inherit;
+      border: inherit;
+    }
+  }
+  .card__design2 {
+    width: 500px;
+    height: 500px;
+    border: 1px solid #ebebeb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 8rem;
+    left: 1rem;
+    z-index: -1;
+    .inner {
+      display: inline-block;
+      width: 300px;
+      height: 450px;
+      border-radius: inherit;
+      border: inherit;
+    }
+  }
+}

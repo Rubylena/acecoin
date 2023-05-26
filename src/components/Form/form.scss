@@ -1,0 +1,98 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1.3rem;
+    h1 {
+      font-weight: 700;
+      color: #1e2a53;
+    }
+    span {
+      font-weight: 400;
+    }
+  }
+
+  .time {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    .box {
+      background-color: #1e2a53;
+      color: #fff;
+      padding: 0.3rem 0.5rem;
+      border-radius: 4px;
+    }
+  }
+
+  @media (max-width: 596px) {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+form {
+  margin-top: 3rem;
+  .field {
+    color: #3b4564;
+    &-title {
+      font-weight: 700;
+    }
+    &-text {
+      font-size: 0.7rem;
+      color: #acb3c2;
+    }
+  }
+
+  .edit {
+    svg path {
+      fill: rgb(13, 97, 215);
+    }
+  }
+
+  .input-controls {
+    display: flex;
+    background-color: #fcfbfe !important;
+    align-items: center;
+    border-radius: 10px;
+    gap: 15px;
+    margin: 2rem 0;
+    border: 1px solid rgb(224 224 224 / 50%);
+    input::placeholder {
+      color: #babfcb;
+      font-size: 0.9rem;
+    }
+  }
+
+  .cvv,
+  .pass {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(224 224 224 / 50%);
+    border-radius: 10px;
+    padding: 0 0.2rem;
+    input::placeholder {
+      color: #2c2e35;
+      font-weight: 600;
+    }
+    svg path {
+      fill: #a1a6b1;
+    }
+  }
+
+  .cvv {
+    input::placeholder {
+      text-align: center;
+    }
+  }
+
+  .expiry {
+    border: 1px solid rgb(224 224 224 / 50%);
+    border-radius: 10px;
+  }
+}
