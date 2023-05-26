@@ -24,7 +24,8 @@ body {
 
   background: url('assets/bg.jpg');
   background-repeat: no-repeat;
-  background-position: 80% center;
+  /* background-position: 80% center; */
+  background-position: 25% center;
   min-height: 100vh;
 
   display: flex;
